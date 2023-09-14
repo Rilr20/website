@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    div {
+        border: 1px solid orangered;
+        width: 33%;
+        height: 100px;
+        text-align: center;
+        a {
+            font-size: 36pt;
+            display: block;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+    }
+}

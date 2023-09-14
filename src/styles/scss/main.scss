@@ -1,0 +1,30 @@
+@import 'basic';
+@import 'variables';
+@import 'font';
+@import 'osrs';
+@import 'nav';
+
+.bendy {
+    // position: relative;
+
+    svg {
+        top: -6px;
+        position: relative;
+    }
+}
+
+.lines2 {
+    position: absolute;
+    left: 150px;
+    top: 748px;
+}
+.svgs{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.sleeveright {
+    position: absolute;
+    left: 907px;
+    top: 1073px
+}
