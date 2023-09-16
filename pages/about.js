@@ -92,7 +92,7 @@ export default function About({runtime}) {
                         </p>
                     </div>
                     <div style={{ marginLeft: "20px", marginTop: "31px" }}>
-                        <Image src="/img/barcode.gif" width="317" height="126" />
+                        <Image alt="barcode" src="/img/barcode.gif" width="317" height="126" />
                     </div>
                 </div>
             </div>
