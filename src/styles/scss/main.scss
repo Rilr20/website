@@ -3,10 +3,11 @@
 @import 'font';
 @import 'osrs';
 @import 'nav';
-
+* {
+    font-family: "Roboto";
+}
 .bendy {
     // position: relative;
-
     svg {
         top: -6px;
         position: relative;
@@ -26,5 +27,10 @@
 .sleeveright {
     position: absolute;
     left: 907px;
+    top: 1073px
+}
+.sleeveleft {
+    position: absolute;
+    left: 0px;
     top: 1073px
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function LineSVG({ className, width, height, rotation = 0 }) {
-    console.log((width / 5 + width / 5) * 2);
     return (
         <svg
             className={className}

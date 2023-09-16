@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function SleeveSVG({ className, width=100, height=331, rotation = 0 }) {
-    console.log((width / 5 + width / 5) * 2);
     return (
         <svg
             className={className}

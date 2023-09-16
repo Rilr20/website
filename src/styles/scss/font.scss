@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave&family=Racing+Sans+One&display=swap');
 //     font-family: 'Racing Sans One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Racing+Sans+One&family=Roboto:wght@300;400&display=swap');
 
 @font-face {
     font-family: digitalsymbols;
@@ -10,11 +11,14 @@
     font-family: digitalsymbols, sans-serif;
 }
 
+p {
+    font-size: 1.2em;
+}
 .title {
+    text-align: center;
+}
+.title a {
     font-size: 96px;
     font-family: 'Racing Sans One', cursive;
-    text-align: center;
-    a {
-        color: white;
-    }
+    color: white;
 }

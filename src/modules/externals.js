@@ -7,10 +7,6 @@ const externals = {
             .then(data => {
                 return data
             })
-        // return ""
-        // console.log("osrsStats");
-        // console.log(osrsStats);
-        // console.log("osrsStats");
         return osrsStats
     }
 }
