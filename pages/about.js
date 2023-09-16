@@ -44,7 +44,7 @@ export default function About({runtime}) {
                     <li><p>Denna videokassett kan användas med alla videokassettspelare och -inspelare som visar märket <span className="digitalfont" style={{ verticalAlign: "middle" }}>|</span>.</p></li>
                 </ul>
                 <ul>
-                    <li><p>Créée par Rikard avec l'aide de NextJS framework</p></li>
+                    <li><p>Créée par Rikard avec l&apos;aide de NextJS framework</p></li>
                     <li><p>Cette vidéocassette peut être utilisée avec tous les magnétoscopes possédant le repére <span className="digitalfont" style={{ verticalAlign: "middle" }}>|</span>.</p></li>
                 </ul>
             </div>

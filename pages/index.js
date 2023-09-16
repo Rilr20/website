@@ -65,7 +65,7 @@ export default function Home({ osrs }) {
             <div style={{ backgroundColor:"", width: "608px", height: "430px", marginLeft: "29.76%", marginRight: "9.92%" }}>
                 <h2 className="centre" style={{marginTop:"20px"}}>Me</h2>
                 {/* <p className="centre"></p> */}
-                <Image style={{margin:"auto", display:"block"}} src="/img/chilling.png" width={196} height={96}/>
+                <Image alt="cat chilling" style={{margin:"auto", display:"block"}} src="/img/chilling.png" width={196} height={96}/>
                 <p className="centre">I'm chilling like this cat</p>
                 {/* <p style={{marginLeft: "20px", marginRight: "20px"}}>Jag heter Rikard och jag har en kandidatexamen i webb-programmering från BTH</p> */}
                 {/* <p style={{marginLeft: "20px", marginRight: "20px"}}>Jag kommer ursprungligen från Staffanstorp i Skåne.</p> */}
