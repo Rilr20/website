@@ -5,16 +5,19 @@ import Link from "next/link";
 import externals from "../src/modules/externals";
 import { placeholder } from '../src/components/const'
 import OSRSTable from "../src/components/osrstable";
-import WebsiteCarbon from "../src/components/websitecarbon";
+import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 
 export async function getServerSideProps() {
 
     // const osrs = await externals.getOsrs("richpotato99")
     // const dict = addToDict(osrs)
     const runtime = calculateRunTime("1999-06-07")
+    const carbon = await externals.getCarbon("www.rilr20.me/about")
+    console.log(carbon);
     return {
         props: {
-            runtime: runtime
+            runtime: runtime,
+            carbon: carbon
         }
     }
 }
@@ -25,7 +28,7 @@ function calculateRunTime(startDate) {
     console.log(timeDifference);
     return Math.floor(timeDifference / 3600000).toLocaleString()
 }
-export default function About({runtime}) {
+export default function About({runtime, carbon}) {
     return (
         <div style={{ width: 1008 + "px", height: 1804 + "px", backgroundColor: "#f4e6cb", margin: "auto" }}>
             {/* <Image className="lines" width="100" height="100" src="/img/line.svg"></Image> */}
@@ -35,17 +38,12 @@ export default function About({runtime}) {
             <div className="content">
                 <h2 style={{fontSize: "48px", textAlign: "center", marginBottom:"20px"}}>About</h2>
                 <ul>
-                    <li><p>Created by Rikard with NextJS framework.</p></li>
+                    <li><p>Created with NextJS framework.</p></li>
                     <li><p>This videocassette can be used with any video cassette player or recorder displaying the mark <span className="digitalfont" style={{ verticalAlign:"middle"}}>|</span>.</p></li>
                 </ul>
-                <br/>
                 <ul>
-                    <li><p>Skapad av Rikard med Nextjs ramverket</p></li>
-                    <li><p>Denna videokassett kan användas med alla videokassettspelare och -inspelare som visar märket <span className="digitalfont" style={{ verticalAlign: "middle" }}>|</span>.</p></li>
-                </ul>
-                <ul>
-                    <li><p>Créée par Rikard avec l&apos;aide de NextJS framework</p></li>
-                    <li><p>Cette vidéocassette peut être utilisée avec tous les magnétoscopes possédant le repére <span className="digitalfont" style={{ verticalAlign: "middle" }}>|</span>.</p></li>
+                    <li><p>Made for fun with weird design</p></li>
+                    <li><p>Weird combination between css-art and being a website</p></li>
                 </ul>
             </div>
 
@@ -62,14 +60,14 @@ export default function About({runtime}) {
                     <p>The Soundtrack has been Digitally processed.</p>
                 </div>
                 <div className="bottom">
-                    <WebsiteCarbon />
+                    <WebsiteCarbonBadge percentage={carbon.cleanerThan*100} co2={Math.round(carbon.statistics.co2.grid.grams *100)/100} />
                 </div>
             </div>
             <div className="svgs">
                 <SleeveSVG className="sleeveleft" rotation={-180}></SleeveSVG>
                 <LineSVG className="divider" rotation={-90} width={15} height={1008}></LineSVG>
             </div>
-            <div style={{ backgroundColor: "#fff", width: "978px", height: "180px", marginLeft: "auto", marginRight: "auto", position: "relative", top: "840px" }}>
+            <div style={{ backgroundColor: "#fff", width: "978px", height: "180px", marginLeft: "auto", marginRight: "auto", position: "relative", top: "1055px" }}>
                 {/* <div style={{ height: "13px" }}></div> */}
                 <div style={{ display: "flex" }}>
                     <div style={{ width: "384px", height: "118px", border: "1px solid black", marginLeft: "16px", fontSize: "54px", marginTop: "31px" }}>

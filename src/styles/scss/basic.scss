@@ -30,8 +30,9 @@ a:active {
     margin: auto;
     position: absolute;
     top: 1348px;
-    right:578px; 
+    right: 578px;
     left: 578px;
+
     .top {
         height: 24px;
         width: 758px;
@@ -83,14 +84,22 @@ a:active {
 
     .bottom {
         position: relative;
-        
         border: 1px solid black;
+        height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .bottom div {
+        display: flex;
+        justify-content: space-around;
     }
 
     .bottom #wcb {
         padding-top: 7px;
         height: 40px;
     }
+
     // div {
     //     p {
     //         position: relative;
@@ -131,10 +140,12 @@ a:active {
 .content {
     width: 70%;
     padding: 5% 15% 5% 15%;
+
     ul {
         width: 500px;
         margin: auto;
     }
+
     ul li p {
         font-size: 26px;
     }

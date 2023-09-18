@@ -9,11 +9,10 @@
     font-family: "Mohave";
     color: #f2f204;
     text-shadow: 1px 1px black;
-    display: grid;
     text-align: center;
     gap: 2px;
-    display: grid;
     grid-template-columns: repeat(3, 55px);
+    display: grid;
     padding: 0.5em;
     justify-content: center
 }
