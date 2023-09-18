@@ -5,18 +5,6 @@
     align-items: center;
 }
 
-.osrs {
-    font-family: "Mohave";
-    color: #f2f204;
-    text-shadow: 1px 1px black;
-    text-align: center;
-    gap: 2px;
-    grid-template-columns: repeat(3, 55px);
-    display: grid;
-    padding: 0.5em;
-    justify-content: center
-}
-
 .osrs-grid {
     border: 1px solid black;
     border-radius: 5px;

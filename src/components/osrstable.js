@@ -4,7 +4,7 @@ import OSRSCard from './osrscard';
 
 export default function OSRSTable(props) {
     return (
-        <Grid className="osrs" container spacing={0.1}>
+        <Grid className="osrs" container spacing={0.1} sx={{ display:"grid", textAlign: "center", gap: 0.2, gridTemplateColumns: 'repeat(3, 55px)', p:"0.5em", justifyContent: "center" }}>
             {
                 props.osrs.map(function (skill, i) {
                     return <Grid key={i} className="osrs-grid" item>
