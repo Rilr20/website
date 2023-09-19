@@ -6,14 +6,14 @@ import externals from "../src/modules/externals";
 
 export async function getServerSideProps() {
 
-    const runtime = calculateRunTime("1999-06-07")
+    // const runtime = calculateRunTime("1999-06-07")
     const carbon = {
         cleanerThan: 0.89,
         statistics: { co2: { grids: { grams: 0.12 } } }
     }
 return {
     props: {
-        runtime: runtime,
+        runtime: "350 000",
         carbon: carbon
     }
 }
@@ -57,8 +57,8 @@ export default function About({ runtime, carbon }) {
                     <p>The Soundtrack has been Digitally processed.</p>
                 </div>
                 <div className="bottom">
-                    {carbon.cleanerThan * 100}
-                    {Math.round(carbon.statistics.co2.grid.grams * 100) / 100}
+                    {/* {carbon.cleanerThan * 100} */}
+                    {/* {Math.round(carbon.statistics.co2.grid.grams * 100) / 100} */}
                 </div>
             </div>
             <div className="svgs">
