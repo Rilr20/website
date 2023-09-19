@@ -10,7 +10,10 @@ import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 export async function getServerSideProps() {
 
     const runtime = calculateRunTime("1999-06-07")
-    const carbon = await externals.getCarbon("www.rilr20.me/")
+    const carbon = {
+        cleanerThan: 0.89,
+        statistics: { co2: { grids: { grams: 0.12 } } }
+    }
 return {
     props: {
         runtime: runtime,
