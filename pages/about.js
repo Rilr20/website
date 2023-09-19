@@ -9,16 +9,14 @@ import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 
 export async function getServerSideProps() {
 
-    // const osrs = await externals.getOsrs("richpotato99")
-    // const dict = addToDict(osrs)
     const runtime = calculateRunTime("1999-06-07")
-    const carbon = await externals.getCarbon("www.rilr20.me/about")
-    return {
-        props: {
-            runtime: runtime,
-            carbon: carbon
-        }
+    const carbon = await externals.getCarbon("www.rilr20.me/")
+return {
+    props: {
+        runtime: runtime,
+        carbon: carbon
     }
+}
 }
 function calculateRunTime(startDate) {
     let birthDate = new Date(startDate);
@@ -27,18 +25,18 @@ function calculateRunTime(startDate) {
     console.log(timeDifference);
     return Math.floor(timeDifference / 3600000).toLocaleString()
 }
-export default function About({runtime, carbon}) {
+export default function About({ runtime, carbon }) {
     return (
         <div style={{ width: 1008 + "px", height: 1804 + "px", backgroundColor: "#f4e6cb", margin: "auto" }}>
             {/* <Image className="lines" width="100" height="100" src="/img/line.svg"></Image> */}
-            <div style={{ background: "#fbca36", width: "978px", height: "150px", paddingLeft:"30px" }}>
+            <div style={{ background: "#fbca36", width: "978px", height: "150px", paddingLeft: "30px" }}>
                 <h1 className="title"><Link href="/">rilr20.me</Link></h1>
             </div>
             <div className="content">
-                <h2 style={{fontSize: "48px", textAlign: "center", marginBottom:"20px"}}>About</h2>
+                <h2 style={{ fontSize: "48px", textAlign: "center", marginBottom: "20px" }}>About</h2>
                 <ul>
                     <li><p>Created with NextJS framework.</p></li>
-                    <li><p>This videocassette can be used with any video cassette player or recorder displaying the mark <span className="digitalfont" style={{ verticalAlign:"middle"}}>|</span>.</p></li>
+                    <li><p>This videocassette can be used with any video cassette player or recorder displaying the mark <span className="digitalfont" style={{ verticalAlign: "middle" }}>|</span>.</p></li>
                 </ul>
                 <ul>
                     <li><p>Made for fun with weird design</p></li>
@@ -59,7 +57,7 @@ export default function About({runtime, carbon}) {
                     <p>The Soundtrack has been Digitally processed.</p>
                 </div>
                 <div className="bottom">
-                    <WebsiteCarbonBadge percentage={carbon.cleanerThan*100} co2={Math.round(carbon.statistics.co2.grid.grams *100)/100} />
+                    <WebsiteCarbonBadge percentage={carbon.cleanerThan * 100} co2={Math.round(carbon.statistics.co2.grid.grams * 100) / 100} />
                 </div>
             </div>
             <div className="svgs">
