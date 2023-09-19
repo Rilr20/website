@@ -10,24 +10,19 @@ const externals = {
         return osrsStats
     },
     getCarbon: async function(webUrl) {
-        let url = "https://api.websitecarbon.com/site?url=" + webUrl
-        console.log("url");
-        console.log(url);
-        console.log("url");
-        const response = await fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                return data
-            })
-        return response
-        // Check if the request was successful
-        // if (response.ok) {
-        //     const carbonData = await response.json(); // This will contain the carbon emissions data
-        //     return carbonData;
-        // } else {
-        //     throw new Error('Failed to fetch carbon data');
-        // }
-
+        try {
+            let url = "https://api.websitecarbon.com/site?url=" + webUrl;
+            console.log("url:", url);
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch data. Status: ${response.status}`);
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error("Error fetching carbon data:", error);
+            throw error;
+        }
     }
 }
 export default externals;

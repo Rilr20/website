@@ -13,7 +13,6 @@ export async function getServerSideProps() {
     // const dict = addToDict(osrs)
     const runtime = calculateRunTime("1999-06-07")
     const carbon = await externals.getCarbon("www.rilr20.me/about")
-    console.log(carbon);
     return {
         props: {
             runtime: runtime,
