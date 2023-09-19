@@ -3,17 +3,11 @@ import SleeveSVG from "@/components/svg/sleeve";
 import Image from "next/image";
 import Link from "next/link";
 import externals from "../src/modules/externals";
-import { placeholder } from '../src/components/const'
-import OSRSTable from "../src/components/osrstable";
-import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 
 export async function getServerSideProps() {
 
     const runtime = calculateRunTime("1999-06-07")
-    const carbon = {
-        cleanerThan: 0.89,
-        statistics: { co2: { grids: { grams: 0.12 } } }
-    }
+    const carbon = await externals.getCarbon("www.rilr20.me/")
 return {
     props: {
         runtime: runtime,
@@ -60,7 +54,8 @@ export default function About({ runtime, carbon }) {
                     <p>The Soundtrack has been Digitally processed.</p>
                 </div>
                 <div className="bottom">
-                    <WebsiteCarbonBadge percentage={carbon.cleanerThan * 100} co2={Math.round(carbon.statistics.co2.grid.grams * 100) / 100} />
+                    {carbon.cleanerThan * 100}
+                    {Math.round(carbon.statistics.co2.grid.grams * 100) / 100}
                 </div>
             </div>
             <div className="svgs">
