@@ -11,12 +11,12 @@ export async function getServerSideProps() {
         cleanerThan: 0.89,
         statistics: { co2: { grids: { grams: 0.12 } } }
     }
-return {
-    props: {
-        runtime: runtime,
-        carbon: carbon
+    return {
+        props: {
+            runtime: runtime,
+            carbon: carbon
+        }
     }
-}
 }
 function calculateRunTime(startDate) {
     let birthDate = new Date(startDate);
@@ -57,8 +57,8 @@ export default function About({ runtime, carbon }) {
                     <p>The Soundtrack has been Digitally processed.</p>
                 </div>
                 <div className="bottom">
-                    {/* {carbon.cleanerThan * 100} */}
-                    {/* {Math.round(carbon.statistics.co2.grid.grams * 100) / 100} */}
+                    {carbon.cleanerThan * 100}
+                    {Math.round(carbon.statistics.co2.grid.grams * 100) / 100}
                 </div>
             </div>
             <div className="svgs">
