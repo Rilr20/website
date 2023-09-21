@@ -9,7 +9,7 @@ export async function getServerSideProps() {
     const runtime = calculateRunTime("1999-06-07")
     const carbon = {
         cleanerThan: 0.89,
-        statistics: { co2: { grids: { grams: 0.12 } } }
+        statistics: { co2: { grid: { grams: 0.12 } } }
     }
     return {
         props: {

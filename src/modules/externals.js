@@ -18,7 +18,7 @@ const externals = {
                 // throw new Error(`Failed to fetch data. Status: ${response.status}`);
                 return {
                     cleanerThan: 0.89,
-                    statistics: { co2:{ grids: { grams: 0.12} } }
+                    statistics: { co2:{ grid: { grams: 0.12} } }
                 };
             }
             const data = await response.json();
