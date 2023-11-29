@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave&family=Racing+Sans+One&display=swap');
 //     font-family: 'Racing Sans One', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Mohave&family=Racing+Sans+One&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Noto+Sans+JP:wght@600&display=swap');
 
 @font-face {
     font-family: digitalsymbols;
@@ -15,10 +16,23 @@ p {
     font-size: 1.2em;
 }
 .title {
-    text-align: center;
+    font-family: 'Exo', sans-serif;
+    margin-left: 1.25em;
+    color: $titlegreen;
+}
+.title-top {
+    letter-spacing: -0.031em;
+    
+}
+.title-bottom {
+    letter-spacing: -0.13em;
+    margin-top: -15px;
 }
 .title a {
-    font-size: 96px;
-    font-family: 'Racing Sans One', cursive;
     color: white;
+}
+@media (min-width: 48em) {
+    .title {
+        margin-left: 1.25em;
+    }
 }

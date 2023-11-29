@@ -1,36 +1,8 @@
-@import 'basic';
 @import 'variables';
+@import 'basic';
 @import 'font';
 @import 'osrs';
 @import 'nav';
-* {
-    font-family: "Roboto";
-}
-.bendy {
-    // position: relative;
-    svg {
-        top: -6px;
-        position: relative;
-    }
-}
-
-.lines2 {
-    position: absolute;
-    left: 150px;
-    top: 748px;
-}
-.svgs{
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
-.sleeveright {
-    position: absolute;
-    left: 907px;
-    top: 1073px
-}
-.sleeveleft {
-    position: absolute;
-    left: 0px;
-    top: 1073px
-}
+@import 'header';
+@import 'footer';
+@import 'index';

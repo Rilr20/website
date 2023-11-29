@@ -1,0 +1,13 @@
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: $lightergrey;
+    position:relative;
+    box-shadow: -1px -1px 4px 0 rgba(0, 0, 0, .1);
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    grid-template-columns: 1fr;
+    .copyright {
+        font-size: 10pt;
+    }
+}
