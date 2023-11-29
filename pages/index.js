@@ -1,13 +1,11 @@
-import LineSVG from "@/components/svg/lines";
-import HalfSVG from "@/components/svg/half";
-import RevSVG from "@/components/svg/rev";
-import SleeveSVG from "@/components/svg/sleeve";
-import Image from "next/image";
-import Link from "next/link";
 import externals from "../src/modules/externals";
 import { placeholder } from '../src/components/const'
 import OSRSTable from "../src/components/osrstable";
 import WebsiteCarbon from "../src/components/websitecarbon";
+import Header from "@/components/header";
+import { Box } from "@mui/material";
+import Footer from "@/components/footer";
+import Image from "next/image";
 
 export async function getServerSideProps() {
 
@@ -41,51 +39,39 @@ function addToDict(params) {
 }
 export default function Home({ osrs }) {
     return (
-        <div style={{ width: 1008 + "px", height: 1804 + "px", backgroundColor: "#f4e6cb", margin: "auto" }}>
-            {/* <Image className="lines" width="100" height="100" src="/img/line.svg"></Image> */}
-            <div style={{ background: "#fbca36", width: "978px", height: "150px", marginLeft: "30px", zIndex: "1", position: "relative", }}>
-                <h1 className="title"><Link href="/">rilr20.me</Link></h1>
-            </div>
+        <>
+        <Header/>
+        <Box className="main-div-1" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
+        <div style={{ width: "84.5%", margin: "auto" }} className="main-parent">
+            <div className="index-divs main-div-1"><div>
+                <h2 className="centre">Om Mig</h2>
 
-            <nav className="navbar" >
-                <div><Link href="/about">About</Link></div>
-                {/* <div><Link href="/stuff">Stuff</Link></div> */}
-                {/* <div><Link href="/things">Things</Link></div> */}
-            </nav>
-            <div className="nav-orange" style={{ backgroundColor: "#f73c28", }}><div style={{paddingTop:"7px"}}><WebsiteCarbon /></div></div>
-            <div className="nav-red" style={{ backgroundColor: "#b31c3c" }}><p></p></div>
-            <div className="nav-purple" style={{ backgroundColor: "#6c1d40" }}><p></p></div>
+                    <Image src="/img/code.webp" objectFit='contain' alt="code" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto', margin: "auto", display: "block", marginBottom: "1.5em", borderRadius: "5px"}} />
 
-            {/* <OSRSTable osrs={osrs} />
-                <p className="centre">Most Insane Old Schools stats ever observed</p> */}
-            {/* <div className="cat-img">
-                    <Image src="/img/chilling.png" width="196" height="96"/>
-                    <p>He do be chilling</p>
-                </div> */}
-            <div style={{ backgroundColor:"", width: "608px", height: "430px", marginLeft: "29.76%", marginRight: "9.92%" }}>
-                <h2 className="centre" style={{marginTop:"20px"}}>Me</h2>
-                {/* <p className="centre"></p> */}
-                <Image alt="cat chilling" style={{margin:"auto", display:"block"}} src="/img/chilling.png" width={196} height={96}/>
-                <p className="centre">I&apos;m chilling like this cat</p>
-                {/* <p style={{marginLeft: "20px", marginRight: "20px"}}>Jag heter Rikard och jag har en kandidatexamen i webb-programmering från BTH</p> */}
-                {/* <p style={{marginLeft: "20px", marginRight: "20px"}}>Jag kommer ursprungligen från Staffanstorp i Skåne.</p> */}
-                {/* <p style={{marginLeft: "20px", marginRight: "20px"}}>Den här webbplatsen är mitt sätt att dela med mig av mina erfarenheter inom webbutveckling.</p> */}
-            </div>
-            <div style={{ backgroundColor: "", width: "608px", height:"480px", paddingTop: "41px", paddingBottom: "41px", height: "418px", marginLeft: "29.76%", marginRight: "9.92%", display: "flex", flexDirection:"column", textAlign:"center" }}>
-                <h2>&lt;--OSRS STATS--&gt;</h2>
-                <OSRSTable osrs={osrs} />
-            </div>
-            <div style={{ backgroundColor:"", width: "608px", height: "380px", marginLeft: "29.76%", marginRight: "9.92%" }}></div>
-            <div className="svgs">
-                <LineSVG className="lines" width={150} height={600}></LineSVG>
-                <div className="bendy">
-                    <HalfSVG className="downleft" width={150} height={150}></HalfSVG>
-                    <RevSVG className="bendy" rotation={180} width={150} height={150}></RevSVG>
-                </div>
-                <LineSVG className="lines2" width={150} height={1056}></LineSVG>
-                <SleeveSVG className="sleeveright"></SleeveSVG>
-            </div>
-            <p className="digitalfont" style={{ width: "116px", height: "150px", fontSize: "90px", marginLeft: "17px", marginRight: "17px" }}>W</p>
+                    <p>
+                        Jag har en kandidatexamen i Programvaruutveckling från Blekinge Tekniska Institut, med en specialisering på webbprogrammering. 
+                        Min akademiska resa började på teknikprogrammet hos NTI-gymnasiet i Lund. Följt av ett extra år med mjukvarudesign. Denna bakgrund har gjort mig till en kompetent programmerare och en djup förståelse för programvarudesign.
+                    </p><br />
+                    <p>
+                        Jag har erfarenhet av flera programmeringsspråk, inklusive C#, PHP, Javascript och Rust, samt djupgående kunskap inom HTML och CSS för att skapa responsiva och väldesignade webbsidor.
+                        Jag är särskilt intresserad av både frontend och backend-utveckling, med fokus på att skapa användarvänliga gränssnitt och robusta serverapplikationer.
+
+                    </p><br />
+                    <p>
+                        Jag är en mycket noggrann person som alltid strävar efter att skapa unika och imponerande lösningar.
+                    </p><br/>
+                    <p>
+                        Som teknikintresserad så letar man efter nya tekniker och utforskar dem. Vilket är alltid spännande är lärorikt att göra. När man inte utforskar så är de andra intresserna film, spel, musik. 
+                    </p>
+                </div></div>
+                <div className="index-divs main-div-2"><div>
+                    <h2 className="centre">Vad händer</h2>
+                </div></div>
+                <div className="index-divs main-div-3"><div>
+                    <h2 className="centre">Vad är detta</h2>
+                </div></div>
         </div>
+        <Footer/>
+        </>
     )
 }
