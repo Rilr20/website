@@ -49,8 +49,8 @@ export default function Home({ osrs }) {
                     <Image src="/img/code.webp" objectFit='contain' alt="code" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto', margin: "auto", display: "block", marginBottom: "1.5em", borderRadius: "5px"}} />
 
                     <p>
-                        Jag har en kandidatexamen i Programvaruutveckling från Blekinge Tekniska Institut, med en specialisering på webbprogrammering. 
-                        Min akademiska resa började på teknikprogrammet hos NTI-gymnasiet i Lund. Följt av ett extra år med mjukvarudesign. Denna bakgrund har gjort mig till en kompetent programmerare och en djup förståelse för programvarudesign.
+                        Min passion för programvaruutveckling började redan under min tid på teknikprogrammet hos NTI-gymnasiet i Lund. Det var här jag grundlade mina första kunskaper inom ämnet och mitt intresse växte till den grad att jag valde att fördjupa mig ytterligare under ett extra år med fokus på mjukvarudesign.
+                        Denna grundläggande utbildning ledde mig sedan till Blekinge Tekniska Institut där jag fullföljde min kandidatexamen i Programvaruutveckling med en specialisering inom webbprogrammering. 
                     </p><br />
                     <p>
                         Jag har erfarenhet av flera programmeringsspråk, inklusive C#, PHP, Javascript och Rust, samt djupgående kunskap inom HTML och CSS för att skapa responsiva och väldesignade webbsidor.
