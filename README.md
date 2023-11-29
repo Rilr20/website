@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Rilr20/website/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Rilr20/website/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/Rilr20/website/badges/build.png?b=main)](https://scrutinizer-ci.com/g/Rilr20/website/build-status/main)
+
+## Website Rilr20.me
+Using the framework Nextjs.
 
 ## Getting Started
 
