@@ -1,63 +1,62 @@
-.navbar {
-    display: flex;
-    width: 948px;
-    justify-content: space-around;
-    height: 50px;
-    background-color: #f5691e;
-    position: relative;
-    left: 60px;
-    z-index: 1;
+// .navbar {
+//     display: flex;
+//     width: 948px;
+//     justify-content: space-around;
+//     height: 50px;
+//     background-color: #f5691e;
+//     position: relative;
+//     left: 60px;
+//     z-index: 1;
 
-    div {
-        // width: 33%;
-        height: 100px;
-        text-align: center;
+//     div {
+//         height: 100px;
+//         text-align: center;
 
-        a {
-            font-size: 36px;
-            display: block;
-            padding-top: 4px;
-            padding-bottom: 4px;
-        }
-    }
-}
+//         a {
+//             font-size: 36px;
+//             display: block;
+//             padding-top: 4px;
+//             padding-bottom: 4px;
+//         }
+//     }
+// }
 
-.nav-orange,
-.nav-red,
-.nav-purple {
-    text-align: center;
-    height: 50px;
-    width: 948px;
-    position: relative;
-    z-index: 1;
+// .nav-orange,
+// .nav-red,
+// .nav-purple {
+//     text-align: center;
+//     height: 50px;
+//     width: 948px;
+//     position: relative;
+//     z-index: 1;
 
-    p {
-        font-size: 26px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-    }
-}
+//     p {
+//         font-size: 26px;
+//         padding-top: 9px;
+//         padding-bottom: 9px;
+//     }
+// }
 
-.nav-orange {
-    left: 90px;
-    width: 918px;
-    p {
-        margin-right: 30px;
-    }
-}
+// .nav-orange {
+//     left: 90px;
+//     width: 918px;
+//     p {
+//         margin-right: 30px;
+//     }
+// }
 
-.nav-red {
-    left: 120px;
-    width: 888px;
-        p {
-        margin-right: 60px;
-    }
-}
+// .nav-red {
+//     left: 120px;
+//     width: 888px;
+//         p {
+//         margin-right: 60px;
+//     }
+// }
 
-.nav-purple {
-    left: 150px;
-    width: 858px;
-        p {
-        margin-right: 90px;
-    }
-}
+// .nav-purple {
+//     left: 150px;
+//     width: 858px;
+//         p {
+//         margin-right: 90px;
+//     }
+// }

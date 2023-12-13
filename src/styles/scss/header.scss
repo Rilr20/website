@@ -132,10 +132,12 @@ a {
 }
 
 .parent {
+    max-width: 1280px;
+    margin: auto;
     display: none;
 }
 /* 48em = 768px */
-
+/* 52em = 832px */
 @media (min-width: 48em) {
     .header li {
         float: left;
@@ -158,7 +160,7 @@ a {
     }
     .parent {
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: 1.44em 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }

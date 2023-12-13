@@ -17,7 +17,7 @@ p {
 }
 .title {
     font-family: 'Exo', sans-serif;
-    margin-left: 1.25em;
+    // margin-left: 0.9em;
     color: $titlegreen;
 }
 .title-top {
@@ -33,6 +33,6 @@ p {
 }
 @media (min-width: 48em) {
     .title {
-        margin-left: 1.25em;
+        // margin-left: 1.44em;
     }
 }
