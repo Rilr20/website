@@ -1,8 +1,9 @@
 import React from 'react'
+import Link from "next/link";
 
 export default function Header() {
     return (
-        <header class="header">
+        <header className="header">
             <div className='parent'>
                 <div className='grid-div div1'></div>
                 <div className='grid-div div2'>
@@ -13,38 +14,38 @@ export default function Header() {
                 <div className='grid-div div4'></div>
                 <div className='grid-div div5'></div>
                 <div className='grid-div div6'>
-                    <ul class="menu">
-                        <li><a href="#about">Me</a></li>
+                    <ul className="menu">
+                        <li><Link href="#home">Me</Link></li>
                     </ul>
                 </div>
                 <div className='grid-div div7'>
-                    <ul class="menu">
-                        <li><a href="#something">About</a></li>
+                    <ul className="menu">
+                        <li><Link href="#about">About</Link></li>
                     </ul>
                 </div>
-                <div className='grid-div div8'>            
-                <ul class="menu">
-                    <li><a href="#else">Något</a></li>
-                </ul>
+                <div className='grid-div div8'>
+                    <ul className="menu">
+                        <li><Link href="#project">Projekt</Link></li>
+                    </ul>
                 </div>
                 <div className='grid-div div9'></div>
             </div>
             <div>
             </div>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <h1 style={{marginLeft:"1em"}} className="burger-menu title title-top">RI</h1>
+            <input className="menu-btn" type="checkbox" id="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+            <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-top">RI</h1>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-bottom">LR</h1>
-            <ul class="burger-menu menu">
-                <li><a href="#home">Me</a></li>
+            <ul className="burger-menu menu">
+                <li><Link href="#home">Me</Link></li>
             </ul>
-            <ul class="burger-menu menu">
-                <li><a href="#about">About</a></li>
+            <ul className="burger-menu menu">
+                <li><Link href="#about">About</Link></li>
             </ul>
-            <ul class="burger-menu menu">
-                <li><a href="#something">Något</a></li>
+            <ul className="burger-menu menu">
+                <li><Link href="#project">Projekt</Link></li>
             </ul>
-            {/* <ul class="burger-menu menu">
+            {/* <ul className="burger-menu menu">
                 <li><a href="#else">Else</a></li>
             </ul> */}
         </header>
