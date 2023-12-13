@@ -6,14 +6,19 @@ import Header from "@/components/header";
 import { Box } from "@mui/material";
 import Footer from "@/components/footer";
 import Image from "next/image";
+import Albums from "@/components/albums";
+import Steam from "@/components/steam";
 
 export async function getServerSideProps() {
-
-    const osrs = await externals.getOsrs("richpotato99")
-    const dict = addToDict(osrs)
+    const albums = await externals.getAlbums();
+    const steam = await externals.getSteam();
+    // const osrs = await externals.getOsrs("richpotato99")
+    // const dict = addToDict(osrs)
     return {
         props: {
-            osrs: dict
+            // osrs: dict,
+            albums: albums,
+            steam: steam,
         }
     }
 }
@@ -37,41 +42,58 @@ function addToDict(params) {
     }
     return newArr
 }
-export default function Home({ osrs }) {
+export default function Home({ albums, steam }) {
     return (
         <>
-        <Header/>
-        <Box className="main-div-1" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
-        <div style={{ width: "84.5%", margin: "auto" }} className="main-parent">
-            <div className="index-divs main-div-1"><div>
-                <h2 className="centre">Om Mig</h2>
+            <Header />
+            <Box className="main-div-2" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
+            <Box sx={{ margin: { xs: "0em", md: "auto" }, maxWidth: "1280px" }} className="">
+                <div className="index-divs index-sections">
+                    <div class="index-child index-me">
+                        <div className="me-img">
+                            <Image className="index-img" src="/img/code.webp" objectFit='contain' alt="code" width={0} height={0} sizes="100vw" style={{ maxWidth: "500px", width: '100%', height: 'auto' }} />
 
-                    <Image src="/img/code.webp" objectFit='contain' alt="code" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto', margin: "auto", display: "block", marginBottom: "1.5em", borderRadius: "5px"}} />
+                        </div>
+                        <div className="me-text">
+                            <h2 className="centre">Om Mig</h2>
+                            <p class="index-about-text">
+                                Min passion för programvaruutveckling började redan under min tid på teknikprogrammet hos NTI-gymnasiet i Lund. Det var här jag grundlade mina första kunskaper inom ämnet och mitt intresse växte till den grad att jag valde att fördjupa mig ytterligare under ett extra år med fokus på mjukvarudesign.
+                                Denna grundläggande utbildning ledde mig sedan till Blekinge Tekniska Institut där jag fullföljde min kandidatexamen i Programvaruutveckling med en specialisering inom webbprogrammering.
+                            </p><br />
+                            <p class="index-about-text">
+                                Jag har erfarenhet av flera programmeringsspråk, inklusive C#, PHP, Javascript och Rust, samt djupgående kunskap inom HTML och CSS för att skapa responsiva och väldesignade webbsidor.
+                                Jag är särskilt intresserad av både frontend och backend-utveckling, med fokus på att skapa användarvänliga gränssnitt och robusta serverapplikationer.
 
-                    <p>
-                        Min passion för programvaruutveckling började redan under min tid på teknikprogrammet hos NTI-gymnasiet i Lund. Det var här jag grundlade mina första kunskaper inom ämnet och mitt intresse växte till den grad att jag valde att fördjupa mig ytterligare under ett extra år med fokus på mjukvarudesign.
-                        Denna grundläggande utbildning ledde mig sedan till Blekinge Tekniska Institut där jag fullföljde min kandidatexamen i Programvaruutveckling med en specialisering inom webbprogrammering. 
-                    </p><br />
-                    <p>
-                        Jag har erfarenhet av flera programmeringsspråk, inklusive C#, PHP, Javascript och Rust, samt djupgående kunskap inom HTML och CSS för att skapa responsiva och väldesignade webbsidor.
-                        Jag är särskilt intresserad av både frontend och backend-utveckling, med fokus på att skapa användarvänliga gränssnitt och robusta serverapplikationer.
+                            </p><br />
+                            <p class="index-about-text">
+                                Jag är en mycket noggrann person som alltid strävar efter att skapa unika och imponerande lösningar.
+                            </p><br />
+                            <p class="index-about-text">
+                                Som teknikintresserad så letar man efter nya tekniker och utforskar dem. Vilket är alltid spännande är lärorikt att göra. När man inte utforskar så är de andra intresserna film, spel, musik.
+                            </p>
+                        </div>
 
-                    </p><br />
-                    <p>
-                        Jag är en mycket noggrann person som alltid strävar efter att skapa unika och imponerande lösningar.
-                    </p><br/>
-                    <p>
-                        Som teknikintresserad så letar man efter nya tekniker och utforskar dem. Vilket är alltid spännande är lärorikt att göra. När man inte utforskar så är de andra intresserna film, spel, musik. 
-                    </p>
-                </div></div>
-                <div className="index-divs main-div-2"><div>
-                    <h2 className="centre">Vad händer</h2>
-                </div></div>
-                <div className="index-divs main-div-3"><div>
-                    <h2 className="centre">Vad är detta</h2>
-                </div></div>
-        </div>
-        <Footer/>
+                    </div>
+                </div>
+                <div className="index-divs index-sections">
+                    <div class="index-child">
+                        <h2 className="centre">Vad händer</h2>
+                        {/* <p className="centre">Intresset just nu</p> */}
+                        <h3 className="centre">Musik</h3>
+                        <Albums albums={albums} />
+                        <h3 className="centre">Spel</h3>
+                        <Steam steam={steam} />
+                        <h3 className="centre">Film</h3>
+                        <p className="centre">Ingen offentlig letterbox api. :&#40;</p>
+                    </div>
+                </div>
+                {/* <div className="index-divs index-sections">
+                    <div class="index-child">
+                        <h2 className="centre">Vad är detta</h2>
+                    </div>
+                </div> */}
+            </Box>
+            <Footer />
         </>
     )
 }
