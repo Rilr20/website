@@ -1,0 +1,45 @@
+{
+    "Project": {
+        "title": "Projects",
+        "template": {
+            "company": "Company",
+            "summary": "Summary",
+            "date": "Project Date",
+            "description": "Project Description",
+            "tech": "Technologies Used",
+            "role": "Role and Contribution",
+            "process": "The Process",
+            "results": "The Results"
+        },
+        "projects": {
+            "2023": {
+                "year": "2023",
+                "FOSSILE": {
+                    "projectTitle": "FOSSILE",
+                    "company": "Ericsson",
+                    "projectDate": "2023",
+                    "summary": "The project was a dependency management solution, developed for Ericsson in conjunction with a course at BTH where 10 students made up the team. The proposal entails the development of a Maven plugin and a web-based platform that will assist Ericsson's developers and product owners in tracking and evaluating dependencies utilized in their projects. Which means you can check if a package has security risks, or the license has any requirements",
+                    "frontend": "Angular, Ericsson's design framework Oden",
+                    "backend": "Java (Jersey and Jetty), Maven",
+                    "roleAndContributions": "My roles for this project was being a part of the frontend subteam. This subteam's responsibility is to create the web portal using the design framework Oden in Angular. We based the design on a mockup created collaboratively with the customer. The customer wanted a more visual way to see the interconectivity between dependencies and projects which lead to the creation of a node tree. Where each dependency is a node, and you can sort between the dependencies used in production, and development environment",
+                    "process": "We divided the team into three sub-teams: Frontend, Backend, and Plugin. The teams had three students per team except for the plugin, with 4. We deemed the plugin as the most extensive part of the system, considering that the whole system revolves around this section. The project used agile and scrum during the development process, creating the tasks on Jira. The project necessitated vast intrateam communication to ensure the structure and proper functionality of the end-to-end system. End-to-end going, from analysing a project to displaying the results on the web portal. Additionally, weekly meetings with the customer involved asking questions and showcasing partial progress. The weekly meetings steered the project in the right direction, with the customer typically offering valuable ideas on solving our problems.",
+                    "results": "The project began with time constraints due to the inaccessibility of Ericsson's office and necessary resources, causing a delay and hindrance in the actual programming work.The frontend was initially a minor aspect which evolved into a more vital part of the system and delivered according to the commitment.Despite not including everything form the intial commitment, a repriority happened with the customer where the more valuable functionality would gain a higher priority, creating a more robust core. The plugin was successfully developed and integrated with the necessary dependencies, while the backend functioned according to plan, except for the integration of the Ericsson API, which requires further refinement. Despite the challenges, the team is reasonably content with what we were able to deliver, considering the circumstances and the valuable learning experience it provided"
+                }
+            },
+            "2022": {
+                "year": "2022",
+                "NFT": {
+                    "projectTitle": "NFT-Marketplace",
+                    "company": "Company: Malvacom",
+                    "projectDate": "Project Date: 2022",
+                    "summary": " The project was an NFT marketplace developed for Malvacom in conjunction with a course at BTH where 5 students made up the team. The main purpose of the product was to create a highly usable web application that enables users to buy, sell, and create NFTs (non-fungible tokens). The product was designed with the end user in mind, aiming to provide an easy experience for users with little knowledge of crypto and NFTs. The application was intended for anyone with an interest in the subject and was designed to bridge the gap between the more known large NFT marketplaces and regular everyday marketplaces. This project was like a \"web 2.5\" as we used web 3 to create cryptos but we also had a database where we saved other information such as likes and accounts.",
+                    "frontend": "Next.js, Sass, Material Ui",
+                    "backend": "Next.js, Postgresql, Solidity, Web3",
+                    "roleAndContributions": "I was primarily responsible for the frontend development of the NFT creation and listing functionalities. This involved creating a user interface that was intuitive and easy to use for users with little knowledge of crypto and NFTs.",
+                    "process": "The project followed the agile development model and scrum. One of the key decisions we made early in the project was to use Ethereum as our blockchain platform, which at the time was a proof of work blockchain. However, we were aware that Ethereum 2.0 would introduce a proof of stake model, which would make it more efficient and scalable. We also decided to use Ethereum because it could be used with popular crypto wallets like Coinbase and MetaMask, which would make it more accessible to our users.",
+                    "results": "The project was a success, delivering a fully working product that met the quality requirements stated by the customer. The customer was satisfied with how we handled the usability requirement and the general user flow from making the first NFT, to selling it and buying one. However, they were less satisfied with the lack of budget for making a mobile version and the inability to share an ad specifically on Instagram. The mobile design was not created due to the usage of browser plugins in the form of crypto wallets and being unsure about how the to make the website detect cryptowallet apps. For the Instagram API it can't be used to create posts for a user."
+                }
+            }
+        }
+    } 
+}

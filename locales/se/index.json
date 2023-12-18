@@ -1,0 +1,14 @@
+{
+    "Index": {
+        "header": "Om Mig",
+        "aboutText1": "Min passion för programvaruutveckling började redan under min tid på teknikprogrammet hos NTI-gymnasiet i Lund. Det var här jag grundlade mina första kunskaper inom ämnet och mitt intresse växte till den grad att jag valde att fördjupa mig ytterligare under ett extra år med fokus på mjukvarudesign. Denna grundläggande utbildning ledde mig sedan till Blekinge Tekniska Institut där jag fullföljde min kandidatexamen i Programvaruutveckling med en specialisering inom webbprogrammering.",
+        "aboutText2": "Jag har erfarenhet av flera programmeringsspråk, inklusive C#, PHP, Javascript och Rust, samt djupgående kunskap inom HTML och CSS för att skapa responsiva och väldesignade webbsidor. Jag är särskilt intresserad av både frontend och backend-utveckling, med fokus på att skapa användarvänliga gränssnitt och robusta serverapplikationer.",
+        "aboutText3": "Jag är en mycket noggrann person som alltid strävar efter att skapa unika och imponerande lösningar.",
+        "aboutText4": "Som teknikintresserad så letar man efter nya tekniker och utforskar dem. Vilket är alltid spännande är lärorikt att göra. När man inte utforskar så är de andra intressena film, spel, musik.",
+        "happening": "Vad händer",
+        "music": "Musik",
+        "games": "Spel",
+        "film": "Film",
+        "noPublicApi": "Ingen offentlig letterbox api. :("
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "Header": {
+        "title": "My Website",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "project": "Project"
+        }
+    },
+    "Footer": {
+        "copyright": "© 2023 My Website"
+    }
+}

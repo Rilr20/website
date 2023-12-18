@@ -1,0 +1,14 @@
+{
+    "Index": {
+        "header": "About Me",
+        "aboutText1": "My passion for software development started during my time at the technical program at NTI in Lund.  The interest in technology and programming grew. I decided to pursue an extra year at NTI focused on software design. This basic education led me to Blekinge Institute of Technology where I completed my bachelor's degree in Software Development with a specialization in web programming.",
+        "aboutText2": "I have experience with several programming languages, including C#, PHP, Javascript, and Rust. Additionally, I have deep knowledge in HTML and CSS, which I use to create responsive and well-designed web pages. I am particularly interested in frontend and backend development, focusing on creating user-friendly interfaces and robust backend applications",
+        "aboutText3": "I am a very meticulous person who always strives to create unique and impressive solutions.",
+        "aboutText4": "As a tech enthusiast, I am always looking for new technologies and exploring them. It's always exciting and educational to explore. When I'm not exploring, my other interests are film, games, and music.",
+        "happening": "What's happening",
+        "music": "Music",
+        "games": "Games",
+        "film": "Film",
+        "noPublicApi": "No public letterbox api. :("
+    }
+}

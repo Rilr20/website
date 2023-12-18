@@ -1,0 +1,45 @@
+{
+    "Project": {
+        "title": "Projects",
+        "template": {
+            "company": "Company",
+            "summary": "Summary",
+            "date": "Project Date",
+            "description": "Project Description",
+            "tech": "Technologies Used",
+            "role": "Role and Contribution",
+            "process": "The Process",
+            "results": "The Results"
+        },
+        "projects": {
+            "2023": {
+                "year": "2023",
+                "FOSSILE": {
+                    "projectTitle": "FOSSILE",
+                    "company": "Ericsson",
+                    "projectDate": "2023",
+                    "summary": "Projektet är ett system för hantering av tredjepartsresurser, utvecklad åt Ericsson i samband med en kurs på BTH där 10 studenter utgjorde teamet. Kundens krav innebär utvecklingen av ett Maven-plugin och en webbaserad plattform som kommer att assistera Ericssons utvecklare och produktägare i att spåra och utvärdera tredjepartsresurser som används i deras projekt. Som att se om där finns säkerhetshål eller licensen kräver något extra",
+                    "frontend": "Angular, Ericsson's design ramverk Oden",
+                    "backend": "Java (Jersey and Jetty), Maven",
+                    "roleAndContributions": "Min roll vad del av fronted-subteamet. Subteamets ansvar var att skapa webbportarlen med hjälp av designramverket Oden i Angular. Designen var skapad gemensamt med kunden så att alla vyer och funktionalitet finns. Kunden ville ha en mer visuell metod att se interkonnektiviteten mellan tredjepartsresurser och projekt. Detta ledde till att ett nodträd skapades. Där alla tredjeparts paket är sin egna nod man kan även sortera mellan paket som används i produktions- och utvecklingsmiljön",
+                    "process": "Teamet delades upp i tre subteam: Frontend, Backend och Plugin. Alla hade tre studenter per team utom för pluginet, med 4. Vi ansåg pluginet som den mest omfattande delen av systemet, eftersom denna delen är grundstenen för de andra områderna. Projektet använde agilt och scrum under utvecklingsprocessen, uppgifter skapade  på Jira. Det krävde stor intern teamkommunikation för att säkerställa strukturen och korrekt funktionalitet och beteende i det fullständiga systemet. End-to-end i detta fallet är att det går från att analysera ett projekt till att visa resultaten på webbportalen. Dessutom var det veckovisa möten med kunden  som involverade att ställa frågor och visa framstegen vi uppnått. Veckomötena styrde projektet i rätt riktning, och kunden erbjöd vanligtvis värdefulla idéer och tips för att lösa våra problem.",
+                    "results": "Projektet började sernare än vad som hade planerats på grund av att vi inte hade tillgång till Ericssons kontor, och deras laptops. Vilket orsakade en stor försening när det gäller att utveckla projektet. Frontend var från början en liten komponent som i senare skede blev en viktig del av systemet och levererades enligt överenskommelsen. Men i helhet så levererades inte allt enligt våran överenskommelsen det skedde en omprioritering där de värdefulla och viktigaste funktionaliteten fick högre prioritet. Så att grunden funktionaliten av projektet blir bättre.Pluginet utvecklades framgångsrikt och integrerades med de nödvändiga komponenterna, och backenden fungerade som den skulle, förutom integrationen av Ericssons API, som kräver ytterligare finjustering. Trots utmaningarna var teamet rimligt nöjt med vad vi lyckades leverera, med tanke på omständigheterna så var det ett värdefullt inlärningsupplevelse."
+                }
+            },
+            "2022": {
+                "year": "2022",
+                "NFT": {
+                    "projectTitle": "NFT-Marketplace",
+                    "company": "Malvacom",
+                    "projectDate": "2022",
+                    "summary": "Projektet var ett NFT-marketplace utvecklad åt Malvacom i samband med en kurs på BTH där 5 studenter utgjorde teamet. Huvudsyftet med produkten var att skapa en användbar webbapplikation som gör det möjligt för användare att köpa, sälja och skapa NFTs (non-fungible token). Produkten var designad med slutanvändaren i åtanke, med målet att erbjuda en enkel upplevelse för användare med liten kunskap om krypto och NFTs. Applikationen var avsedd för alla som var intresserade av ämnet och var designad för att minska klyftan mellan de mer kända NFT-handelsplattform och de dagliga vanliga onlinebutikerna. Detta projekt användes sig av \"webb 2.5\" eftersom vi använde webb 3 för att skapa kryptovalutor men vi hade också en databas där vi sparade annan information som till exempel favoriter och kontoinformation.",
+                    "frontend": "Next.js, Sass, Material Ui",
+                    "backend": "Next.js, Postgresql, Solidity, Web3",
+                    "roleAndContributions": "Jag var utveckalde främst för frontend komponenterna som t.ex. NFT-skapandet och annonsskapandet. Detta innebar att skapa ett användargränssnitt som var intuitivt och lätt att använda för användare med liten kunskap om krypto och NFTs.",
+                    "process": "Projektet följde agilt utvecklingsmodell med scrum. En av de viktigaste besluten vi fattade tidigt i projektet var att använda Ethereum som vår blockchain-valuta, vilket vid den tiden var proof of work. Vi var dock medvetna om att Ethereum 2.0 skulle införa en proof of stake-modell, vilket skulle göra det mer effektivt och skalbart. Vi beslutade också att använda Ethereum eftersom det kunde användas med populära kryptoplånböcker som Coinbase och MetaMask, vilket skulle göra det mer tillgängligt för våra användare.",
+                    "results": "Projektet gick bra och vi levererade en helt fungerande produkt som uppfyllde kravspecen som kunden angav. Kunden var nöjd med hur vi hanterade användbarhetsvillkoret och den allmänna användarflödet från att skapa det första NFT, till att sälja det och köpa ett. De var dock mindre nöjda med bristen på budget för att skapa en mobilversion och förmågan att dela en annons specifikt på Instagram. En Mobildesign skapades inte på grund av användningen av webbläsarplugins i form av kryptoplånböcker men även på grund av en osäkerhet om hur man ska göra  så webbplatsen kan upptäcka appar som är kryptoplånböcker. Enligt Instagram API så kan det inte användas för att skapa inlägg för en användare, vilket gjorde att kravet inte kunde uppfyllas."
+                }
+            }
+        }
+    }
+}

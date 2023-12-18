@@ -1,0 +1,13 @@
+{
+    "Header": {
+        "title": "Min webbplats",
+        "nav": {
+            "home": "Hem",
+            "about": "Om",
+            "project": "Projekt"
+        }
+    },
+    "Footer": {
+        "copyright": "© 2023 Min webbplats"
+    }
+}
