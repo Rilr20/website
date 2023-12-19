@@ -1,7 +1,18 @@
 import React from 'react'
 import Link from "next/link";
+import Image from 'next/image';
+import { useRouter } from 'next/router'
+import { useTranslations } from 'next-intl';
 
-export default function Header() {
+export default function Header({ locale }) {
+    const router = useRouter();
+    const nextLocale = locale === 'en' ? 'se' : 'en';
+
+    const changeLocale = () => {
+        router.push(router.pathname, router.asPath, { locale: nextLocale });
+    }
+    const t = useTranslations('Header');
+
     return (
         <header className="header">
             <div className='parent'>
@@ -15,20 +26,22 @@ export default function Header() {
                 <div className='grid-div div5'></div>
                 <div className='grid-div div6'>
                     <ul className="menu">
-                        <li><Link href="#home">Me</Link></li>
+                        <li><Link href="/">{t('nav.home')}</Link></li>
                     </ul>
                 </div>
                 <div className='grid-div div7'>
                     <ul className="menu">
-                        <li><Link href="#about">About</Link></li>
+                        <li><Link href="/about">{t('nav.about')}</Link></li>
                     </ul>
                 </div>
                 <div className='grid-div div8'>
                     <ul className="menu">
-                        <li><Link href="#project">Projekt</Link></li>
+                        <li><Link href="/project">{t('nav.project')}</Link></li>
                     </ul>
                 </div>
-                <div className='grid-div div9'></div>
+                <div className='grid-div div9 flag-click' onClick={changeLocale}>
+                    <Image src={`/img/${nextLocale}.png`} width={32} height={32} />
+                </div>
             </div>
             <div>
             </div>
@@ -36,14 +49,19 @@ export default function Header() {
             <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-top">RI</h1>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-bottom">LR</h1>
+            <div className='burger-menu flag-click-mobile' onClick={changeLocale}>
+                <Image src={`/img/${nextLocale}.png`} width={32} height={32} />
+            </div>
             <ul className="burger-menu menu">
-                <li><Link href="#home">Me</Link></li>
+                <li><Link href="/">{t('nav.home')}</Link></li>
             </ul>
             <ul className="burger-menu menu">
-                <li><Link href="#about">About</Link></li>
+                <li><Link href="/about">{t('nav.about')}</Link></li>
             </ul>
             <ul className="burger-menu menu">
-                <li><Link href="#project">Projekt</Link></li>
+                <li><Link href="/project">{t('nav.project')}</Link></li>
+            </ul>
+            <ul className="burger-menu menu flag-click">
             </ul>
             {/* <ul className="burger-menu menu">
                 <li><a href="#else">Else</a></li>
