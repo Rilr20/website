@@ -15,22 +15,32 @@
 p {
     font-size: 1.2em;
 }
+
 .title {
     font-family: 'Exo', sans-serif;
     // margin-left: 0.9em;
     color: $titlegreen;
 }
+
 .title-top {
     letter-spacing: -0.031em;
-    
+
 }
+
 .title-bottom {
     letter-spacing: -0.13em;
     margin-top: -15px;
 }
+
 .title a {
     color: white;
 }
+
+h3 {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
 @media (min-width: 48em) {
     .title {
         // margin-left: 1.44em;

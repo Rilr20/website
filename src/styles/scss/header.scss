@@ -24,8 +24,20 @@ a {
     width: 100%;
     height: 100%;
     background-color: $white;
+
     li {
         height: 100%;
+    }
+}
+
+.flag-click-mobile {
+    cursor: pointer;
+    // padding: 25px 0px 25px 0px;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -136,6 +148,7 @@ a {
     margin: auto;
     display: none;
 }
+
 /* 48em = 768px */
 /* 52em = 832px */
 @media (min-width: 48em) {
@@ -143,10 +156,24 @@ a {
         float: left;
     }
 
+    .flag-click {
+        cursor: pointer;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        border-right: 1px solid #7b9474;
+    }
+
     .header li a {
         padding: 25px 30px 25px 30px;
         width: 86px;
-        border-top:0;
+        border-top: 0;
     }
 
     .header .menu {
@@ -154,35 +181,61 @@ a {
         float: right;
         max-height: none;
     }
-    
+
     .header .menu-icon {
         display: none;
     }
+
     .parent {
         display: grid;
-        grid-template-columns: 1.44em 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0fr;
+        grid-template-columns: 1.44em 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr 64px;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
+
     .burger-menu {
         display: none;
     }
-    .div1 { grid-area: 1 / 1 / 2 / 2;}
-    .div2 { grid-area: 1 / 2 / 2 / 3;}
-    .div3 { grid-area: 1 / 3 / 2 / 4;}
-    .div4 { grid-area: 1 / 4 / 2 / 5;}
-    .div5 { grid-area: 1 / 5 / 2 / 6;}
-    .div6 { grid-area: 1 / 6 / 2 / 7;
-    border-right: 1px solid #f4f4f4;
-    border-right: 1px solid $lightgreen;
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
     }
-    .div7 { grid-area: 1 / 7 / 2 / 8;
-    border-right: 1px solid #f4f4f4;
-    border-right: 1px solid $lightgreen;
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
     }
-    .div8 { grid-area: 1 / 8 / 2 / 9;
-    border-right: 1px solid #f4f4f4;
-    border-right: 1px solid $lightgreen;
+
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
     }
-    .div9 { grid-area: 1 / 9 / 2 / 10;} 
+
+    .div4 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .div5 {
+        grid-area: 1 / 5 / 2 / 6;
+    }
+
+    .div6 {
+        grid-area: 1 / 6 / 2 / 7;
+        border-right: 1px solid #f4f4f4;
+        border-right: 1px solid $lightgreen;
+    }
+
+    .div7 {
+        grid-area: 1 / 7 / 2 / 8;
+        border-right: 1px solid #f4f4f4;
+        border-right: 1px solid $lightgreen;
+    }
+
+    .div8 {
+        grid-area: 1 / 8 / 2 / 9;
+        border-right: 1px solid #f4f4f4;
+        border-right: 1px solid $lightgreen;
+    }
+
+    .div9 {
+        grid-area: 1 / 9 / 2 / 10;
+    }
 }
