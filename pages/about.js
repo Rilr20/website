@@ -1,12 +1,11 @@
-import externals from "../src/modules/externals";
 import { Box } from "@mui/material";
+import { useTranslations } from 'next-intl';
 
 export async function getServerSideProps({ locale }) {
 
-    const carbon = await externals.getCarbon("rilr20.me/about")
+    // const carbon = await externals.getCarbon("rilr20.me/about")
     return {
         props: {
-            carbon: carbon,
             messages: {
                 ...require(`../locales/${locale}/about.json`),
                 ...require(`../locales/${locale}/shared.json`),
@@ -15,12 +14,21 @@ export async function getServerSideProps({ locale }) {
     }
 }
 
-export default function About({ runtime, carbon }) {
+export default function About() {
+    const t = useTranslations('About');
+
     return (
         <>
             <Box className="main-div-2" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
-            <Box sx={{ margin: { xs: "0em", md: "auto" }, maxWidth: "1280px" }} className="">
-                About
+            <Box sx={{ margin: { xs: "0em", md: "auto" }, maxWidth: "1280px", minHeight: "601px" }} className="">
+                <div className="project-div ">
+                    <div className="project ">
+                        <h1 className="centre">{t('title')}</h1>
+                        <p>{t('aboutText1')}</p>
+                        <p>{t('aboutText2')}</p>
+                        <p>{t('aboutText3')}</p>
+                    </div>
+                </div>
             </Box>
         </>
     )

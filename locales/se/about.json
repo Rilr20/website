@@ -1,6 +1,8 @@
 {
     "About": {
         "title": "Om",
-        "description": "Mer om oss"
+        "aboutText1": "Webbsidan är skapad med hjälp av Nextj.js, Material UI, och SCSS. Dessa valdes för att det är tekniker jag gillar att arbeta med.",
+        "aboutText2": "Det används även externa api:er som Last.fm, Steam, och Runescape för att visa upp data. Detta lades till bara för skojs skull. För att göra den mer unik och personlig. Det är även en utmaning i sig att visa upp och hantera datan som returneras från ett api.",
+        "aboutText3": "Detta projektet har varit roligt att skapa. Det har varit ett ypperligt tillfälle att lära mig mer om tekniker och kunna experimentera med dem. Jag har även tyckt om skapandeprocessen gå från designa hemsidan till implementationen av funktionaliten. "
     }
 }

@@ -1,6 +1,8 @@
 {
     "About": {
         "title": "About",
-        "description": "More about us"
+        "aboutText1": "This website was created with Next.js, Material UI, and SCSS. I chose these technologies because I enjoy working with them.",
+        "aboutText2": "The website also uses some external API calls to Last.fm, Steam, and Runescape to display some fun data. These API calls were added more as a playful addition than for any other reason. They make it more personal and it also fun challenge to display and look through the results of an api call.",
+        "aboutText3": "This project has been a lot of fun to create. It's been a great opportunity to learn and experiment with Next.js, Material UI, and SCSS. I've enjoyed every step of the process, from designing the website to implementing the features."
     }
 }
