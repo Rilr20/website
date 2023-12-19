@@ -12,8 +12,7 @@ export default function OSRSCard(props) {
             <Box>
                 <Box sx={{ display: "flex", border: "#302d25", p: "0.2em", marginTop: "4px", marginBottom:"4px"}} title={`${props.skill} XP: ${xpFormated}`} >
                     <Box sx={{ mt: "0.3em", width: "25px", height: "25px" }}>
-                        {/* <Image className="img inline" width="20px" height="20px" src={"/img/skills/" + props.skill + ".png"} alt="attack"></Image> */}
-                        <Image className="skill-icon" width="20" height="20" src={"/img/skills/" + props.skill + ".gif"} alt={props.skill} />
+                        <Image className="skill-icon" width="20" height="20" src={"/img/skills/" + props.skill + ".webp"} alt={props.skill} />
                     </Box>
                     <Box sx={{ mt: "0.3em", ml: "0.2em" }}>{props.lvl}</Box>
                 </Box>
