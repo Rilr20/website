@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
 export default function Project({ messages }) {
     const t = useTranslations('Project');
     const years = ["2023", "2022"];
-    const projects = [['FOSSILE'], ['NFT']];
+    const projects = [["THESIS",'FOSSILE'], ['NFT']];
     return (
         <>
             <Box className="main-div-2" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
@@ -51,7 +51,7 @@ export default function Project({ messages }) {
                                                 </div>
                                             </div>
                                             <div className="project-intro-img">
-                                                <Image src={`/img/${project}.webp`} alt={`image of ${project}`} width={650} height={400} />
+                                                <Image src={`/img/${project}.webp`} alt={`image of ${project}`} objectFit='contain'width={0} height={0} sizes="100vw" style={{ maxWidth: "650", width: '100%', height: 'auto' }} />
                                             </div>
                                         </div>
                                         <h2>{t(`template.description`)}</h2>

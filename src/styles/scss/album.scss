@@ -2,14 +2,8 @@
     min-width: 90px;
     min-height: 90px;
     max-width: 160px;
-    // max-width: 170px;
-    // max-height: 170px;
     position: relative;
     display: inline-block;
-    // .album-art {
-    //     margin: "auto";
-    //     display: "block";
-    // }
 
     .album-title {
         position: absolute;
@@ -17,10 +11,7 @@
         min-width: 160px;
         width: auto;
         background-color: adjust-color($color: $lightgreen, $alpha: -0.15);
-        // padding: 5px 5% 0px 5%;
         font-size: small;
-        // text-shadow: 1px 1px 1px $grey;
-        // transform: translate(25%, 0%);
     }
 }
 
@@ -36,11 +27,4 @@
 
 
 
-@media (min-width: 48em) {
-
-
-    // .album {
-    //     width: 50px;
-    //     height: 50px;
-    // }
-}
+@media (min-width: 48em) {}

@@ -11,14 +11,11 @@
         50px 50px 80px rgba(54, 67, 43, 0.07);
     margin-top: 31px;
     padding: 1em 0em 2em 0em;
-    
-    // padding-left: 3em;
-    // padding-right: 3em;
-    // padding-bottom: 2em;
+
 }
 
 .project {
-    width: 50%;
+    width: 90%;
     margin: auto;
 
     .project-title {
@@ -28,25 +25,17 @@
 
 .project-intro {
 
-    // display: flex;
-    // justify-content: space-evenly;
     .project-intro-text {
 
-        // width: 50%;
         .top-text {
             display: flex;
             justify-content: space-evenly;
-            // p:last-child {
-            //     // width: 50%;
-            //     text-align: right;
-            // }
         }
 
     }
 
     .project-intro-img {
 
-        // width: 50%;
         img {
             display: block;
             margin: auto;
@@ -86,4 +75,10 @@
     border-radius: 15px;
     background: $lightergrey;
     margin: 1em auto 1em auto;
+}
+
+@media (min-width: 48em) {
+    .project {
+        width: 50%;
+    }
 }
