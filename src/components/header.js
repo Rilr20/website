@@ -6,10 +6,8 @@ import { useTranslations } from 'next-intl';
 
 export default function Header({ locale }) {
     const router = useRouter();
-    const nextLocale = locale === 'en' ? 'se' : 'en';
-
     const changeLocale = () => {
-        router.push(router.pathname, router.asPath, { locale: nextLocale });
+        router.push(router.pathname, router.asPath, { locale: locale === 'en' ? 'se' : 'en' });
     }
     const t = useTranslations('Header');
 
@@ -40,17 +38,16 @@ export default function Header({ locale }) {
                     </ul>
                 </div>
                 <div className='grid-div div9 flag-click' onClick={changeLocale}>
-                    <Image src={`/img/${nextLocale}.png`} alt={`${nextLocale}-flag`} width={32} height={32} />
+                    <Image src={`/img/${locale}.png`} alt={`${locale}-flag`} width={32} height={32} />
                 </div>
             </div>
-            <div>
-            </div>
+
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-top">RI</h1>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-bottom">LR</h1>
             <div className='burger-menu flag-click-mobile' onClick={changeLocale}>
-                <Image src={`/img/${nextLocale}.png`} alt={`${nextLocale}-flag`} width={32} height={32} />
+                <Image src={`/img/${locale}.png`} alt={`${locale}-flag`} width={32} height={32} />
             </div>
             <ul className="burger-menu menu">
                 <li><Link href="/">{t('nav.home')}</Link></li>
@@ -60,8 +57,6 @@ export default function Header({ locale }) {
             </ul>
             <ul className="burger-menu menu">
                 <li><Link href="/project">{t('nav.project')}</Link></li>
-            </ul>
-            <ul className="burger-menu menu flag-click">
             </ul>
         </header>
     )
