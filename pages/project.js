@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
 export default function Project({ messages }) {
     const t = useTranslations('Project');
     const years = ["2023", "2022"];
-    const projects = [["THESIS",'FOSSILE'], ['NFT']];
+    const projects = [['FOSSILE'], ['NFT']];
     return (
         <>
             <Box className="main-div-2" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
