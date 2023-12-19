@@ -29,8 +29,6 @@ const externals = {
         }
     },
     getAlbums: async function () {
-        // console.log("called");
-        // console.log(`${process.env.NEXT_PUBLIC_lastfm_username}`);
         // const url = `http://ws.audioscrobbler.com/2.0/?method=user.getweeklyalbumchart&user=${process.env.NEXT_PUBLIC_lastfm_username}&api_key=${process.env.NEXT_PUBLIC_lastfm_api}&format=json`
         const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${process.env.NEXT_PUBLIC_lastfm_username}&period=7day&api_key=${process.env.NEXT_PUBLIC_lastfm_api}&limit=4&format=json`
         const response = await fetch(url);
