@@ -2,14 +2,14 @@
     "Project": {
         "title": "Projects",
         "template": {
-            "company": "Company",
-            "summary": "Summary",
-            "date": "Project Date",
-            "description": "Project Description",
-            "tech": "Technologies Used",
-            "role": "Role and Contribution",
-            "process": "The Process",
-            "results": "The Results"
+            "company": "Företag",
+            "summary": "Sammanfattning",
+            "date": "Datum",
+            "description": "Projektbeskrivning",
+            "tech": "Teknikerna",
+            "role": "Rollen och insatsen",
+            "process": "Processen",
+            "results": "Resultaten"
         },
         "projects": {
             "2023": {
