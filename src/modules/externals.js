@@ -15,7 +15,6 @@ const externals = {
             let url = "https://api.websitecarbon.com/site?url=" + webUrl;
             const response = await fetch(url);
             if (!response.ok) {
-                // throw new Error(`Failed to fetch data. Status: ${response.status}`);
                 return {
                     cleanerThan: 0.89,
                     statistics: { co2: { grid: { grams: 0.12 } } }
@@ -29,12 +28,19 @@ const externals = {
         }
     },
     getAlbums: async function () {
-        // const url = `http://ws.audioscrobbler.com/2.0/?method=user.getweeklyalbumchart&user=${process.env.NEXT_PUBLIC_lastfm_username}&api_key=${process.env.NEXT_PUBLIC_lastfm_api}&format=json`
         const url = `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${process.env.NEXT_PUBLIC_lastfm_username}&period=7day&api_key=${process.env.NEXT_PUBLIC_lastfm_api}&limit=4&format=json`
         const response = await fetch(url);
         if (!response.ok) {
             return {
-                error: "something went wrong"
+                error: "something went wrong",
+                topalbums: {
+                    album: [
+                        { image: ["", "", {"#text": ""}], name: "" },
+                        { image: ["", "", {"#text": ""}], name: "" },
+                        { image: ["", "", {"#text": ""}], name: "" },
+                        { image: ["", "", {"#text": ""}], name: "" },
+                    ]
+                }
             }
         }
         const data = await response.json();
@@ -45,7 +51,14 @@ const externals = {
         const response = await fetch(url);
         if (!response.ok) {
             return {
-                error: "something went wrong"
+                error: "something went wrong",
+                response: {
+                    games: [
+                        { appid: "", },
+                        { appid: "", }
+                    ]
+                }
+
             }
         }
         const data = await response.json();
