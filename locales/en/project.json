@@ -14,6 +14,17 @@
         "projects": {
             "2023": {
                 "year": "2023",
+                "THESIS": {
+                    "projectTitle": "Bachelor Thesis",
+                    "company": "N/A",
+                    "projectDate": "2023",
+                    "summary": "This project involved a literature review and a case study focusing on the migration of a company's system from a high granularity to lower granularity using microservices. The thesis provided valuable insights into the factors influencing the suitability of microservices for a particular system.",
+                    "frontend": "N/A",
+                    "backend": "N/A",
+                    "roleAndContributions": "Collaborated with another student, Simon, and the company Dizparc during the migration process. Partaking in the research in the research process which incluided a literature review and a case study.",
+                    "process": "The project began with a literature review and a case study involving interviewing the project architect. Challenges faced during the research process included lack of prior knowledge on the topic. The thesis was structured incrementally with regular feedback from the supervisor. The processing of the interview data involved creating a thematic analysis and validated the codes and themes created with the research findings. The project followed Dizparc's migration of a customer's system going from a system with around 30 services to a more streamlined system with 10-15 services. Changing the granularity of the system. The interview with the project architect centered on exploring the motivations for the migration, delving into the systems technology pre and post migration, and discussing the challenges they are encountering. The literature review was about the strengths and weaknesses of the microservices architecture. While researching there were a lack of literature about this specific type of migration as in the changing of granularity, it's usually a migration from monolith to microservices that were documented.",
+                    "results": "The thesis results highlight that factors like team size, quantity of teams, and system scope impact whether microservices are a good fit for a system or if other options might be more suitable. These results offer important considerations for making architectural decisions."
+                },
                 "FOSSILE": {
                     "projectTitle": "FOSSILE",
                     "company": "Ericsson",
@@ -41,5 +52,5 @@
                 }
             }
         }
-    } 
+    }
 }
