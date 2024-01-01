@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale }) {
 export default function Project({ messages }) {
     const t = useTranslations('Project');
     const years = ["2023", "2022"];
-    const projects = [['FOSSILE'], ['NFT']];
+    const projects = [["THESIS",'FOSSILE'], ['NFT']];
     return (
         <>
             <Box className="main-div-2" sx={{ height: { xs: '70px', md: '70px' }, width: "100%" }}></Box>
@@ -27,8 +27,8 @@ export default function Project({ messages }) {
                 </div>
                 {years.map((year, key) => (
 
-                    <div key={`key`} className="project-div">
-                        <h2 id={t(`projects.${year}.year`)} className="year">{t(`projects.${year}.year`)}</h2>
+                    <div id={t(`projects.${year}.year`)} key={`key`} className="project-div">
+                        <h2 className="year">{t(`projects.${year}.year`)}</h2>
                         {projects[key].map((project, key2) => {
                             const backendTechList = t(`projects.${year}.${project}.backend`).split(", ").map((technology, index) => (
                                 <li key={`${year}-${project}-${index}`}>{technology}</li>
@@ -51,7 +51,7 @@ export default function Project({ messages }) {
                                                 </div>
                                             </div>
                                             <div className="project-intro-img">
-                                                <Image src={`/img/${project}.webp`} alt={`image of ${project}`} objectFit='contain'width={0} height={0} sizes="100vw" style={{ maxWidth: "650", width: '100%', height: 'auto' }} />
+                                                <Image src={`/img/${project}.webp`} alt={`image of ${project}`} width={0} height={0} sizes="100vw" style={{ maxWidth: "650", width: '100%', height: 'auto', objectFit: "contain" }} />
                                             </div>
                                         </div>
                                         <h2>{t(`template.description`)}</h2>
