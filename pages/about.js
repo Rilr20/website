@@ -24,8 +24,11 @@ export default function About() {
                 <div className="project-div ">
                     <div className="project ">
                         <h1 className="centre">{t('title')}</h1>
+                        <br/>
                         <p>{t('aboutText1')}</p>
+                        <br/>
                         <p>{t('aboutText2')}</p>
+                        <br/>
                         <p>{t('aboutText3')}</p>
                     </div>
                 </div>
