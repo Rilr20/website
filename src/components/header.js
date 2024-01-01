@@ -38,7 +38,7 @@ export default function Header({ locale }) {
                     </ul>
                 </div>
                 <div className='grid-div div9 flag-click' onClick={changeLocale}>
-                    <Image src={`/img/${locale}.png`} alt={`${locale}-flag`} width={32} height={32} />
+                    <Image src={`/img/${locale === 'en' ? 'se' : 'en'}.png`} alt={`${locale === 'en' ? 'se' : 'en'}-flag`} width={32} height={32} />
                 </div>
             </div>
 
@@ -47,7 +47,7 @@ export default function Header({ locale }) {
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-top">RI</h1>
             <h1 style={{ marginLeft: "1em" }} className="burger-menu title title-bottom">LR</h1>
             <div className='burger-menu flag-click-mobile' onClick={changeLocale}>
-                <Image src={`/img/${locale}.png`} alt={`${locale}-flag`} width={32} height={32} />
+                <Image src={`/img/${locale === 'en' ? 'se' : 'en'}.png`} alt={`${locale === 'en' ? 'se' : 'en'}-flag`} width={32} height={32} />
             </div>
             <ul className="burger-menu menu">
                 <li><Link href="/">{t('nav.home')}</Link></li>
