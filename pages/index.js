@@ -57,7 +57,7 @@ export default function Home({ osrs, albums, steam }) {
                 <div className="index-divs index-sections">
                     <div className="index-child index-me">
                         <div className="me-img">
-                            <Image className="index-img" src="/img/code.webp" objectFit='contain' alt="code" width={0} height={0} sizes="100vw" style={{ maxWidth: "500px", width: '100%', height: 'auto' }} />
+                            <Image className="index-img" src="/img/code.webp" alt="code" width={0} height={0} sizes="100vw" style={{ maxWidth: "500px", width: '100%', height: 'auto', objectFit:"contain" }} />
                         </div>
                         <div className="me-text">
                             <h2 className="centre">{t('header')}</h2>
