@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 export default function Header({ locale }) {
     const router = useRouter();
     const changeLocale = () => {
-        router.push(router.pathname, router.asPath, { locale: locale === 'en' ? 'se' : 'en' });
+        router.push({ pathname: router.pathname, query: router.query }, undefined, { locale: locale === 'en' ? 'se' : 'en' });
     }
     const t = useTranslations('Header');
 
