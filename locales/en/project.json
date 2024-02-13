@@ -16,7 +16,7 @@
                 "year": "2023",
                 "THESIS": {
                     "projectTitle": "Bachelor Thesis",
-                    "company": "N/A",
+                    "company": "Dizparc Växjö. DiVA, id: diva2:1774110",
                     "projectDate": "2023",
                     "summary": "This project involved a literature review and a case study focusing on the migration of a company's system from a high granularity to lower granularity using microservices. The thesis provided valuable insights into the factors influencing the suitability of microservices for a particular system.",
                     "frontend": "N/A",
