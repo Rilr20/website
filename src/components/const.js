@@ -166,5 +166,12 @@ export const placeholder = [
         rank: null,
         lvl: null,
         xp: null
+    },
+    {
+        id: 22,
+        skill: "sailing",
+        rank: null,
+        lvl: null,
+        xp: null
     }
 ]
